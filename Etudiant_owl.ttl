@@ -1,0 +1,19 @@
+@prefix : <http://example.org/academix#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+# Classe générale
+:Personne rdf:type owl:Class .
+
+# Classes
+:Etudiant rdf:type owl:Class ;
+          rdfs:subClassOf :Personne ;
+          owl:disjointWith :Professeur .
+
+:Professeur rdf:type owl:Class ;
+            rdfs:subClassOf :Personne .
+
+# Individu (test)
+:Ali rdf:type :Etudiant .
+:Ali rdf:type :Professeur .

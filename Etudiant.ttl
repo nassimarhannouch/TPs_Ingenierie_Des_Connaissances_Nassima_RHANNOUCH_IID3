@@ -1,0 +1,10 @@
+@prefix : <http://example.org/academix#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+# Définition des classes
+:Etudiant rdf:type rdf:Class .
+:Professeur rdf:type rdf:Class .
+
+# Individu
+:Ali rdf:type :Etudiant .
+:Ali rdf:type :Professeur .
